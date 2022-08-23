@@ -24,4 +24,9 @@ export class AppComponent {
     setTimeout(() => {resolve("data arrived!")}, 3500);
   });
   date: Date = new Date();
+  language: string = "es";
+
+  changeLanguage(lang: string){
+    this.language = lang;
+  }
 }
