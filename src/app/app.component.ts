@@ -27,8 +27,13 @@ export class AppComponent {
   date: Date = new Date();
   language: string = "es";
   videoUrl: string = 'https://www.youtube.com/embed/ffOxZoz7DqE';
+  turnOn: boolean = false;
 
   changeLanguage(lang: string){
     this.language = lang;
+  }
+
+  togglePassword(){
+    this.turnOn = !this.turnOn;
   }
 }

@@ -8,6 +8,7 @@ import localeEs from "@angular/common/locales/es";
 import localeFr from "@angular/common/locales/fr";
 import { CapitalizedPipe } from './pipes/capitalized.pipe';
 import { SecureDomPipe } from './pipes/secure-dom.pipe';
+import { PasswordPipe } from './pipes/password.pipe';
 
 registerLocaleData(localeEs);
 registerLocaleData(localeFr);
@@ -16,7 +17,8 @@ registerLocaleData(localeFr);
   declarations: [
     AppComponent,
     CapitalizedPipe,
-    SecureDomPipe
+    SecureDomPipe,
+    PasswordPipe
   ],
   imports: [
     BrowserModule,

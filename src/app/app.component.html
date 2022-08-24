@@ -107,9 +107,15 @@
           <td>Date (MMMM- dd) ({{language}})</td>
           <td>{{date | date:"MMMM- dd":"":language}}</td>
         </tr>
+        <tr>
+          <td>{{name}}</td>
+          <td>Password</td>
+          <td>{{name | password: turnOn}}</td>
+        </tr>
         <button class="mr-1 btn btn-primary" (click)="changeLanguage('es')">Spanish</button>
         <button class="mr-1 btn btn-secondary" (click)="changeLanguage('en')">English</button>
         <button class="mr-1 btn btn-success" (click)="changeLanguage('fr')">French</button>
+        <button class="btn btn-outline-primary" (click)="togglePassword()">Turn On/Off</button>
       </tbody>
     </table>
     <h4>Slice <small>(start = 5 & end = 20)</small></h4>
