@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   name: string = "B3dserk Studios";
+  name2: string = "JoHn COnstantINE";
   numberArray: number[] = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16];
   PI:number = Math.PI;
   percentage: number = 0.234;
@@ -25,6 +26,7 @@ export class AppComponent {
   });
   date: Date = new Date();
   language: string = "es";
+  videoUrl: string = 'https://www.youtube.com/embed/ffOxZoz7DqE';
 
   changeLanguage(lang: string){
     this.language = lang;
